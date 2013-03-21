@@ -41,7 +41,7 @@ upload a url to wenking, if success, you'll get response `1`
 
 ```ruby
 url = "http://xxx" # the url you want to check
-extradata = {"post_id":"335"} # a json object with content whatever you want, so you can get it when you call the get_phish api later
+extradata = '{"post_id":"335"}' # a json object with content whatever you want, so you can get it when you call the get_phish api later
 $wenking.scan(:url => url, :extradata => extradata)
 ```
 get detection result by the `get_phish` api, it returns a hash array with all phish urls in it
